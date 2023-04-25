@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/spbgs"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_43sdp"
+                android:layout_height="@dimen/_43sdp"
+                android:src="@drawable/sp_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:scrollbars="none"
+        android:layout_marginLeft="@dimen/_7sdp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp">
+
+
+
+            <ImageView
+                android:id="@+id/d_home"
+                android:layout_width="@dimen/_125sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:src="@drawable/d_home" />
+
+
+
+            <ImageView
+                android:id="@+id/d_category"
+                android:layout_width="@dimen/_125sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:src="@drawable/d_categories" />
+
+            <ImageView
+                android:id="@+id/d_download"
+                android:layout_width="@dimen/_125sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:src="@drawable/d_download" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/d_dark"
+                    android:layout_width="@dimen/_125sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:src="@drawable/d_mode" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/modeSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    app:trackTint="@color/track_color"
+                    app:thumbTint="@color/thumb_color"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/d_share"
+                android:layout_width="@dimen/_125sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:src="@drawable/d_share_btn" />
+
+            <ImageView
+                android:id="@+id/d_rate"
+                android:layout_width="@dimen/_125sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:src="@drawable/d_rate_btn" />
+
+            <ImageView
+                android:id="@+id/d_privacy"
+                android:layout_width="@dimen/_125sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:src="@drawable/d_privacy_btn" />
+
+            <ImageView
+                android:id="@+id/d_more"
+                android:layout_width="@dimen/_125sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:src="@drawable/d_more_btn" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

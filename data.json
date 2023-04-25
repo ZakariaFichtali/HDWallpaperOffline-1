@@ -1,0 +1,25 @@
+{
+    "Ads": {
+        "show_ads": false,
+        "bannerAd": "unity",
+        "InterAd": "admob",
+        "NativeAd": "max",
+        "admob_banner": "ca-app-pub-3940256099942544/6300978111",
+        "admob_inter": "ca-app-pub-3940256099942544/1033173712",
+        "admob_native": "ca-app-pub-3940256099942544/1044960115",
+        "facebook_banner": "IMG_16_9_APP_INSTALL#6081906371842532_6081908348509001",
+        "facebook_inter": "IMG_16_9_APP_INSTALL#6081906371842532_6081908768508959",
+        "facebook_native": "IMG_16_9_APP_INSTALL#6081906371842532_6081909341842235",
+        "max_banner": "6db1491f2e21970c",
+        "max_inter": "812b82d9e0c7cb7f",
+        "max_native": "64ea2f2ef41edb34",
+		"ironsource_api": "1011dee21",
+		"unityTest": true,
+        "unityGameID": "1734877",
+        "unityBanner": "banner",
+        "unityInter": "Android_Interstitial",
+        "intersitial_click_activites": 1,
+		"intersitial_click_list": 3
+
+    }
+}

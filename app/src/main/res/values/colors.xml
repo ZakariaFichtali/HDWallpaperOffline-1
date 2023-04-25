@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#252736</color>
+    <color name="purple_500">#F5F9FA</color>
+    <color name="purple_700">#F5F9FA</color>
+    <color name="teal_200">#F5F9FA</color>
+    <color name="teal_700">#F5F9FA</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="textColorPrimary">#212121</color>
+    <color name="textColorSecondary">#757575</color>
+    <color name="category_item_txt">#fff</color>
+    <color name="round_btn_bg">#80000000</color>
+
+    <!--UI Colors-->
+    <color name="unpress_color">#A9B1C7</color>
+    <color name="slider_dot_color">#FF9800</color>
+    <color name="splash_text_color">#ffffff</color>
+    <color name="header_text_color">@color/slider_dot_color</color>
+    <color name="home_frag_text_color">#0E131A</color>
+    <color name="main_bg_color">#F5F9FA</color>
+    <color name="thumb_color">#112945</color>
+    <color name="track_color">#9A98A6</color>
+    <color name="transparent">#00000000</color>
+    <color name="exit_alert_bg">#F5F9FA</color>
+    <color name="exit_btn_color">@color/slider_dot_color</color>
+    <color name="exit_btn_btn_color">#fff</color>
+    <color name="exit_txt_color">#0E131A</color>
+    <color name="home_frag_sub_color">#B9BFCD</color>
+    <color name="pop_header_txt_color">#0E131A</color>
+</resources>

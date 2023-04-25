@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/loader_lay" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_85sdp">
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="@dimen/_290sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:background="@drawable/search_bg"
+                android:drawableLeft="@drawable/ic_search"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="Search"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:paddingLeft="@dimen/_25sdp"
+                android:paddingRight="@dimen/_25sdp"
+                android:textColor="#000"
+                android:textColorHint="@color/home_frag_sub_color"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:text="Trending"
+                android:textColor="@color/home_frag_text_color"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_margin="@dimen/_6sdp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0.0px"
+                app:cardCornerRadius="@dimen/_7sdp"
+                app:cardElevation="1.5dp"
+                app:cardPreventCornerOverlap="false">
+
+                <com.synnapps.carouselview.CarouselView
+                    android:id="@+id/carouselView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:animateOnBoundary="true"
+                    app:fillColor="@color/slider_dot_color"
+                    app:indicatorMarginVertical="@dimen/_6sdp"
+                    app:pageColor="@color/transparent"
+                    app:radius="@dimen/_3sdp"
+                    app:slideInterval="3000"
+                    app:strokeColor="@color/white"
+                    app:strokeWidth="1dp" />
+            </androidx.cardview.widget.CardView>
+
+            <include layout="@layout/ad_banner_lay"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:text="Recommended"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/home_frag_text_color"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/exploreAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_7sdp"
+                    android:gravity="center"
+
+                    android:paddingRight="40dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:background="@color/header_text_color"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="wrap_content"
+                        android:text="Explore"
+
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_9sdp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_11sdp"
+                        android:layout_height="@dimen/_11sdp"
+                        android:src="@drawable/right_arrow"
+
+                        app:tint="@color/home_frag_sub_color" />
+                </LinearLayout>
+                <View
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:background="@color/home_frag_sub_color"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/exploreAll"/>
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/wallList"
+                android:layout_width="match_parent"
+                android:layout_height="550dp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layoutAnimation="@anim/layout_animation"
+                android:padding="@dimen/_3sdp" />
+
+            <include layout="@layout/layout_nads"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
